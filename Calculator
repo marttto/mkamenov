@@ -1,0 +1,36 @@
+# calculator.py
+
+a = input("Enter a: ")
+a = int(a)
+
+b = input("Enter b:")
+b = int(b)
+
+result = 0
+result = int(result)
+
+oper1 = "+"
+oper2 = "-"
+oper3 = "/"
+oper4 = "*"
+oper = input("Enter operation: ")
+
+if oper == oper1:
+    result = a + b
+    result = int(result)
+    print("Result is: \n" + str(result))
+elif oper == oper2:
+    result = a - b
+    result = int(result)
+    print("Result is: \n" + str(result))
+elif oper == oper3:
+    result = a / b
+    result = int(result)
+    print("Result is: \n" + str(result))
+elif oper == oper4:
+    result = a * b
+    result = int(result)
+    print("Result is: \n" + str(result))
+else:
+    result = "We do not support that operation."
+    print(result)
