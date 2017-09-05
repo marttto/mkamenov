@@ -1,16 +1,15 @@
 # simple_answer.py
 
-text = input("Enter your text here: ")
-text = str(text)
+while True:
+    text = input("Enter your text here?")
 
-if text == "hello" or text =="Hello":
-    print("Hello there, good stranger!")
-elif text == "how are you?":
-    print("I am fine, thanks. How are you?")
-elif text == "feelings":
-    print("I am a machine. I have no feelings")
-elif text == "age":
-    print("I have no age. Only current timestamp")
-
-# Ако в текста се среща повече от 1 от думите, за които гледаме, отговорете с това, с което първо проверявате.
-# Само това условия не се сещам как да го направя?!?
+    if "hello" in text or "Hello" in text:
+        print("Hello there, good stranger!")
+    elif "how are you?" in text:
+        print("I am fine, thanks. How are you?")
+    elif "feelings" in text:
+        print("I am a machine. I have no feelings")
+    elif "age" in text:
+        print("I have no age. Only current timestamp")
+    else:
+        print("I can't understand you!")
